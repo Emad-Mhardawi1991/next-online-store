@@ -1,4 +1,7 @@
+import classes from './layout.module.css'
+
 import Head from "next/head";
+import Nav from "../nav/nav";
 const Layout = (props) => {
   return (
     <div>
@@ -11,7 +14,9 @@ const Layout = (props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       
-      <header>header</header>
+      <header className='bg-black'>
+        <Nav/>
+      </header>
 
       <main>{props.children}</main>
 
